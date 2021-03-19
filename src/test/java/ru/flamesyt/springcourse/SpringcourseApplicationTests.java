@@ -15,7 +15,7 @@ class SpringcourseApplicationTests {
     }
 
     @Test
-    public void givenAnnotationConfig_whenLookupMethodCalled_ThenNewDriverCreated() {
+    public void findCarInContextAndCheckForLoockupInjection() {
         ApplicationContext javaConfigContext =
                 new AnnotationConfigApplicationContext(SpringcourseApplication.class);
         Car car = javaConfigContext.getBean(Car.class);
