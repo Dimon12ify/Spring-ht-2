@@ -5,11 +5,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Car {
-
     public Car() {
     }
 
-    @Lookup
+    @Lookup("driver")
     public Driver getDriver() {
         return null;
     }

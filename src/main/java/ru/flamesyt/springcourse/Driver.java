@@ -1,5 +1,6 @@
 package ru.flamesyt.springcourse;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Lookup;
@@ -8,8 +9,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Scope("prototype")
+@Data
 public class Driver {
-    @Getter @Setter
     private String name;
 
     public String drive() {
